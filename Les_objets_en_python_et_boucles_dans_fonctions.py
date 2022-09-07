@@ -47,7 +47,7 @@ def voyelle_mot1(mot):
     tab_voy = [letter for letter in mot if letter in "aeiouyAEIOUY"]
     return tab_voy
 
-print(voyelle_mot1("Acadabra"))
+print(voyelle_mot1("Acadabra")) # ['A', 'a', 'a', 'a']
 
 
 def nb_voyelle_mot(phrase):
@@ -57,11 +57,10 @@ def nb_voyelle_mot(phrase):
             nbr_voy += 1
     return nbr_voy
 
-print(nb_voyelle_mot("Acadabra"))
+print(nb_voyelle_mot("Acadabra")) # 4
 
 def nb_voyelle_mot1(phrase):
     tab_voy = [letter for letter in phrase if letter in "aeiouyAEIOUY"]
     return len(tab_voy)
     
-
-print(nb_voyelle_mot1("Acadabra"))
+print(nb_voyelle_mot1("Acadabra")) # 4
