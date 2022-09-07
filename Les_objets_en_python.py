@@ -6,7 +6,7 @@ type("bonjour") # <class 'str'> --> string --> chaîne de caractères
 
 type([1,"bonjour", 1.2]) # <class 'list'> --> list --> liste
 
-type((1,2)) # <class 'tuple'> --> tuple --> tuple
+type((1,"boujour", 1.2)) # <class 'tuple'> --> tuple --> tuple
 
 type({"first": "bonjour", "second": 2}) # <class 'dict'> --> dictionnary --> dictionnaire
 
@@ -48,13 +48,20 @@ def voyelle_mot1(mot):
     return tab_voy
 
 print(voyelle_mot1("Acadabra"))
-#ayant pour parametre une phrase appelee phrase et qui retourne le nombre de voyelles et qui retourne le nombre nrb_voy = au nombre de voyelles de la phrase
 
-def nb_voyelle_mot(mot):
-    nb_voy = 0
-    for letter in mot:
+
+def nb_voyelle_mot(phrase):
+    nbr_voy = 0
+    for letter in phrase:
         if letter in "aeiouyAEIOUY":
-            nb_voy += 1
-    return nb_voy
+            nbr_voy += 1
+    return nbr_voy
 
 print(nb_voyelle_mot("Acadabra"))
+
+def nb_voyelle_mot1(phrase):
+    tab_voy = [letter for letter in phrase if letter in "aeiouyAEIOUY"]
+    return len(tab_voy)
+    
+
+print(nb_voyelle_mot1("Acadabra"))
