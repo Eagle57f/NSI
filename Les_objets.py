@@ -11,7 +11,7 @@ type((1,"boujour", 1.2)) # <class 'tuple'> --> tuple --> tuple
 type({"first": "bonjour", "second": 2}) # <class 'dict'> --> dictionnary --> dictionnaire
 
 
-1+1.2 # 2.2 --> integer --> entier
+1+1.2 # 2.2 --> float --> flottant
 
 "Bonjour" + " toi!" # Bonjour toi! --> string --> chaîne de caractères
 
