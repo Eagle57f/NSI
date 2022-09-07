@@ -21,6 +21,8 @@ type({"first": "bonjour", "second": 2}) # <class 'dict'> --> dictionnary --> dic
 
 (1,"bonjour", 1.2)[1] # bonjour --> string --> chaîne de caractères
 
+(1,"bonjour", 1.2)[-1] # 1.2 --> integer --> entier
+
 [1,"bonjour", 1.2][0] # 1 --> integer --> entier
 
 {"first": "bonjour", "second": 2}["second"] # 2 --> integer --> entier
