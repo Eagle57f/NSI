@@ -3,7 +3,7 @@ from turtle import *
 speed(100)
 
 def fivesquares():
-    def square(*, pos:tuple, lenght:int, col:str):
+    def square(pos:tuple, lenght:int, col:str):
         up()
         goto(pos)
         down()
@@ -15,16 +15,15 @@ def fivesquares():
             lt(90)
         end_fill()
 
-    square(pos=(0, 0), lenght=20, col="yellow")
-    square(pos=(-200, 200), lenght=50, col="blue")
-    square(pos=(-200, -200), lenght=15, col="green")
-    square(pos=(200, -200), lenght=25, col="pink")
-    square(pos=(200, 200), lenght=30, col="red")
+    square((0, 0), 20, "yellow")
+    square((-200, 200), 50, "blue")
+    square((-200, -200), 15, "green")
+    square((200, -200), 25, "pink")
+    square((200, 200), 30, "red")
 
     exitonclick()
 
 # fivesquares()
-
 
 def fullsquares():
     def square(col):
@@ -62,6 +61,61 @@ def fullsquares():
 
 # fullsquares()
 
+def fullsquares1():
+    speed(0)
+
+
+    def carre_n(col_n):
+        begin_fill()
+        color(col_n)
+        for i in range(4):
+            fd(30)
+            lt(90)
+        end_fill()
+        return carre_n
+
+    def carre_b(col_b):
+        begin_fill()
+        color(col_b)
+        for i in range(4):
+            fd(30)
+            lt(90)
+        end_fill()
+        return carre_b
+
+    def ligne(col_b,col_n):
+        for i in range(7):
+            print(carre_b(col_b))
+            fd(30)
+            print(carre_n(col_n))
+            fd(30)
+        print(carre_b(col_b))
+        fd(30)
+        return ligne
+
+    def damier():
+        for i in range(7):
+            print(ligne("black","white"))
+            rt(180)
+            print(ligne("white","black"))
+            lt(90)
+            fd(60)
+            lt(90)
+        print(ligne("black","white"))
+        pencolor("black")
+        left(180)
+        for i in range(4):
+            fd(30*15)
+            rt(90)
+        return damier
+
+    up()
+    goto(-250,250)
+    down()
+    damier()
+
+# fullsquares1()
+
 def fullpolys():
     def poly(sides, lenght, *,x,y,color:str):
         pencolor(color)
@@ -82,9 +136,10 @@ def fullpolys():
 
 # fullpolys()
 
-
-
-def fulltriangles():
+def fulltriangles1():
+    up()
+    goto(-250,0)
+    down()
     def triangle(col):
         down()
         pencolor("black")
@@ -95,18 +150,18 @@ def fulltriangles():
             lt(120)
         end_fill()
         up()
-    for x in range(7):
+    for x in range(15):
         if x%2==0:
             up()
             fd(30)
             down()
             triangle("black")
-
         else:
             up()
             fd(30)
             down()
             triangle("white")
             
-fulltriangles()
-exitonclick()
+# fulltriangles1()
+
+exitonclick() # Cette fonction sert a laisser la page turtle ouverte. Pour la fermer il suffit de cliquer à n'importe quel endroit sur la page turtle.
