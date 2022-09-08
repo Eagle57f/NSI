@@ -1,6 +1,6 @@
 from turtle import *
 
-speed(100)
+speed(0)
 
 def fivesquares():
     def square(pos:tuple, lenght:int, col:str):
@@ -62,8 +62,6 @@ def fullsquares():
 # fullsquares()
 
 def fullsquares1():
-    speed(0)
-
 
     def carre_n(col_n):
         begin_fill()
