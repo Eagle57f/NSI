@@ -139,8 +139,6 @@ def fulltriangles1():
     goto(-250,0)
     down()
     def triangle(col):
-        down()
-        pencolor("black")
         begin_fill()
         fillcolor(col)
         for i in range(3):
@@ -149,17 +147,11 @@ def fulltriangles1():
         end_fill()
         up()
     for x in range(15):
-        if x%2==0:
-            up()
-            fd(30)
-            down()
-            triangle("black")
-        else:
-            up()
-            fd(30)
-            down()
-            triangle("white")
+        up()
+        fd(30)
+        down()
+        triangle("black" if x%2==0 else "white")
             
-# fulltriangles1()
+fulltriangles1()
 
 exitonclick() # Cette fonction sert a laisser la page turtle ouverte. Pour la fermer il suffit de cliquer à n'importe quel endroit sur la page turtle.
