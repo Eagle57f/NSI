@@ -54,15 +54,33 @@ def dec_bin1(nombre:int):
 ### m et n sont des nombres en hexadécimal
 ### somme_hexa doit retourner la somme de n et m en héxadécimal.
 
+def somme_hexa(n, m):
+    if type(n) is str:
+        n = int(n,16)
+    if type(m) is str:
+        m = int(m,16)
+    number = n + m
 
-def hex_hex(n: str, m: str):
-    n = str(hex(n)).replace("0x","")
-    m = str(hex(m)).replace("0x","")
-    nb=["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"]
-    hex_nb = ""
-    for i in range(max([len(n)-2, len(m)-2])):
-        hex_nb = str(nb.index(n[i])) + str(nb.index(m[i])) + hex_nb
-    
-    return hex_nb
+    hex_num = ""
+    def tohex(number, hex_num, b):
+        nb=["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"]
+        if number<=1:
+            hex_num = str(number) + hex_num
+            b = True
+        else:
+            x = number%16
+            number = number//16
+            if x < 10:
+                hex_num = str(x) + hex_num
+            if x >= 10:
+                hex_num = str(nb[x]) + hex_num
+        return number, hex_num, b
+    b = False
+    while number//16 != 0 and b == False:
+        number, hex_num, b = tohex(number, hex_num, b)
+    number, hex_num, b = tohex(number, hex_num, b)
 
-print(hex_hex(0x1f2f4d,0x1))
+    return hex_num
+
+
+print(somme_hexa("0x1f04d", 0x561f1a)) # Prend en paramètres des hexadécimaux, strings avec 0x ou sans.
