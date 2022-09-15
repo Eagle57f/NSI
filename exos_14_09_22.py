@@ -70,33 +70,3 @@ def decime_binaire(nb: int): # fonction principale
 
 
 
-def decime_hexa(nb: int): # fonction principale
-
-    def ca(color, l): # fonction qui dessine le carré de couleur donnée
-        tl.begin_fill()
-        tl.fillcolor(color[0])
-        for c in range(3):
-            tl.fd(50)
-            tl.lt(90)
-        tl.fd(40)
-        tl.pencolor(color[1])
-        tl.write("   " + l,font=("Verdana",15, "normal"))
-        tl.pencolor("black")
-        tl.fd(10)
-        tl.lt(90)
-        tl.fd(50)
-        tl.end_fill()
-
-    tl.up()
-    tl.goto(-250,0)
-    tl.down()
-
-    for i in hex(nb).replace("0x", ""):
-        d = {"0":("black", "white"), "1":("white", "black"), "2":("blue", "white"), "3":("yellow", "black"), "4":("red", "white"), "5":("green", "white"), "6":("pink", "black"), "7":("purple", "white"), "8":("dark blue", "white"), "9":("grey", "black"), "a":("brown", "white"), "b":("cyan", "black"), "c":("yellow", "black"), "d":("red", "white"), "e":("green", "white"), "f":("pink", "black")}
-        ca(d[i], i)
-
-decime_hexa(81985529216486895)
-print(hex(81985529216486895))
-
-tl.exitonclick()
-print(0x0123456789abcdef)
