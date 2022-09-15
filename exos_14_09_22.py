@@ -91,7 +91,7 @@ def decime_hexa(nb: int): # fonction principale
     tl.goto(-250,0)
     tl.down()
 
-    for i in hex(nb).replace("0x", ""): # boucle qui parcours le binaire
+    for i in hex(nb).replace("0x", ""):
         d = {"0":("black", "white"), "1":("white", "black"), "2":("blue", "white"), "3":("yellow", "black"), "4":("red", "white"), "5":("green", "white"), "6":("pink", "black"), "7":("purple", "white"), "8":("dark blue", "white"), "9":("grey", "black"), "a":("brown", "white"), "b":("cyan", "black"), "c":("yellow", "black"), "d":("red", "white"), "e":("green", "white"), "f":("pink", "black")}
         ca(d[i], i)
 
