@@ -1,0 +1,35 @@
+.first
+{
+    color:green;
+    font-size: 10px;
+}
+
+.second
+{
+    color: yellow;
+    font-size: 15px;
+}
+
+.third
+{
+    color: blue;
+    font-size: 20px;
+}
+
+.fourth
+{
+    color: orange;
+    font-size: 25px;
+}
+
+.name
+{
+    color:rgba(255, 0, 0, 0.518);
+}
+
+div table{
+    border:5px rgb(192, 22, 22)
+}
+th,td{
+    color:rgb(192, 22, 22)
+}
