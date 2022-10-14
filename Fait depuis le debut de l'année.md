@@ -1,0 +1,15 @@
+**Fait depuis le début de l'année**
+---
+-----------------------------------
+- [Python un peu de révision](https://github.com/Eagle57f/NSI/tree/main/Python/Divers "Python un peu de révision")
+- [Systèmes de numération](https://github.com/Eagle57f/NSI/tree/main/Python/Binaire%20et%20h%C3%A9xad%C3%A9cimal%20et%20UTF-8 "Systèmes de numération")
+    - binaire
+    - hexadécimal
+- codage ASCII et UTF-8
+- [HTML](https://github.com/Eagle57f/NSI/tree/main/HTML "HTML")
+    - avec style intégré
+    - tableau
+    - image
+- [Turtle](https://github.com/Eagle57f/NSI/tree/main/Python/Turtle "Turtle")
+- [Fichiers textes écriture et lecture (with open(..., "r/a/w") as ...)](https://github.com/Eagle57f/NSI/tree/main/Python/fichiers "Fichiers textes écriture et lecture ")
+- Booliens (Vrai/Faux, True/False)
