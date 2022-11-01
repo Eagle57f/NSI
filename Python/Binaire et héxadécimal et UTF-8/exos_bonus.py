@@ -78,6 +78,12 @@ def ph_binaire(phrase): # fonction principale
             tl.fd(50)
             tl.down()
 
-ph_binaire("Codage ASCII")
+# ph_binaire("Codage ASCII")
 
-tl.exitonclick()
+#tl.exitonclick()
+
+
+# Question bonus
+
+with open(r"Python\Binaire et héxadécimal et UTF-8\sauvegarde.txt", "w") as f:
+    f.write(ASCII_phrase("Codage ASCII"))
