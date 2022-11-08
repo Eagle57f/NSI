@@ -10,7 +10,7 @@
 - [Systèmes de numération](https://github.com/Eagle57f/NSI/tree/main/Python/Binaire%20et%20h%C3%A9xad%C3%A9cimal%20et%20UTF-8 "Systèmes de numération")
     - binaire
     - hexadécimal
-- codage ASCII et UTF-8
+- [codage ASCII et UTF-8](https://github.com/Eagle57f/NSI/tree/main/Python/Binaire%20et%20h%C3%A9xad%C3%A9cimal%20et%20UTF-8) "Encodage")
 - [HTML](https://github.com/Eagle57f/NSI/tree/main/HTML "HTML")
     - tableau
     - image
