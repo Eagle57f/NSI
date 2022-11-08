@@ -7,10 +7,10 @@
         - [Partie 1](https://github.com/Eagle57f/NSI/blob/main/Python/Divers/d%C3%A9crire%20une%20liste%20et%20une%20chaine%20de%20caracteres.py "Les listes partie 1")
         - [Partie 2](https://github.com/Eagle57f/NSI/blob/main/Python/Divers/suite%20listes.py "Les listes partie 2")
         - [Partie 3](https://github.com/Eagle57f/NSI/blob/main/Python/Divers/liste%20partie%203.py "Les listes partie 3")
-- [Systèmes de numération](https://github.com/Eagle57f/NSI/tree/main/Python/Binaire%20et%20h%C3%A9xad%C3%A9cimal%20et%20UTF-8 "Systèmes de numération")
+- [Systèmes de numération + encodage](https://github.com/Eagle57f/NSI/tree/main/Python/Binaire%20et%20h%C3%A9xad%C3%A9cimal%20et%20UTF-8 "Systèmes de numération + encodage")
     - binaire
     - hexadécimal
-- [codage ASCII et UTF-8](https://github.com/Eagle57f/NSI/tree/main/Python/Binaire%20et%20h%C3%A9xad%C3%A9cimal%20et%20UTF-8) "Encodage")
+    - codage ASCII et UTF-8
 - [HTML](https://github.com/Eagle57f/NSI/tree/main/HTML "HTML")
     - tableau
     - image
