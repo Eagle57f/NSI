@@ -75,7 +75,9 @@ def tadaro(l):
 
 
 
-def tadaro(l):
+
+
+def tadaro2(l):
     l_end = []
     for letter in l:
         is_in = False
@@ -85,13 +87,40 @@ def tadaro(l):
                 letter_count[1] += 1
                 break
         if is_in == False:
-            l_end.append([letter, 1])
-    l_tpl_end = []
-    for tpl in l_end:
-        l_tpl_end.append(tuple(tpl))
-    return l_tpl_end
+            l_end.append([letter, 1]) #liste car tuple est immuable
+    return [tuple(tpl) for tpl in l_end]
             
 
 
-print(tadaro(["a", "c", "c", "c", "o", "e", "a", "i"]))
+print(tadaro2(["a", "c", "c", "c", "o", "e", "a", "i"]))
+
+
+
+
+
+
+
+def trop_long(li):
+    a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z = 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+
+    for letter in li:
+        if letter == "a": a+=1
+        if letter == "b": b+=1
+        if letter == "c": c+=1
+        if letter == "d": d+=1
+    l_end = []
+    if a > 0: l_end.append(("a", a))
+    if b > 0: l_end.append(("b", b))
+    if c > 0: l_end.append(("c", c))
+    if d > 0: l_end.append(("d", d))
+
+    return l_end
+
+# print(trop_long(["a", "c", "c", "c", "d"]))
+
+
+
+
+
+
 
