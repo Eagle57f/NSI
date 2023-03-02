@@ -7,7 +7,7 @@ def tadaro2(l_in):
                 is_in = True
                 letter_count[1] += 1
         if not is_in:
-            l_end.append([letter, 1]) #list car tuple est immuable
+            l_end.append([letter, 1]) # list car tuple est immuable
     return [tuple(tpl) for tpl in l_end]
             
 
